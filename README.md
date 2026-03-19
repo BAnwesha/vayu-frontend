@@ -1,5 +1,5 @@
 
-```markdown
+
 # Vayu Frontend | Live Weather Dashboard 🌦️
 
 A highly dynamic, responsive weather dashboard built with Next.js and Tailwind CSS. It connects to a custom Spring Boot WebSocket server to receive live, optimized weather updates.
