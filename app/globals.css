@@ -24,3 +24,35 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* RAIN ANIMATION */
+@keyframes rain-drop {
+  0% { transform: translateY(-20vh) rotate(15deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(110vh) rotate(15deg); opacity: 0; }
+}
+
+.animate-rain { 
+  animation: rain-drop linear infinite backwards; 
+}
+
+/* CLOUD ANIMATION */
+@keyframes float-cloud {
+  0% { transform: translateX(-20vw); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateX(120vw); opacity: 0; }
+}
+.animate-cloud { 
+  animation: float-cloud linear infinite; 
+}
+
+/* STAR ANIMATION */
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+.animate-star { 
+  animation: star-twinkle ease-in-out infinite; 
+}
