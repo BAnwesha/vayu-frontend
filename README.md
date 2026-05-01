@@ -1,24 +1,26 @@
+# Vayu Interactive Dashboard
 
+A highly immersive, real-time weather dashboard built with Next.js and TypeScript. Vayu goes beyond standard weather apps by introducing interactive 3D visualizations, spatial audio, and AI-driven conversational elements.
 
-# Vayu Frontend | Live Weather Dashboard 🌦️
+## ✨ Key Features & Recent Updates
 
-A highly dynamic, responsive weather dashboard built with Next.js and Tailwind CSS. It connects to a custom Spring Boot WebSocket server to receive live, optimized weather updates.
-
-## ✨ Key Features
-* **Live WebSocket Integration:** Maintains a persistent connection to the backend, updating the UI instantly only when atmospheric conditions change.
-* **Dynamic Theming:** The background gradient automatically shifts based on the time of day (using real sunrise/sunset epoch data) and current weather conditions.
-* **Pure CSS Weather Animations:** Features a custom `<WeatherAnimations />` component that renders falling rain, floating clouds, and twinkling stars using pure CSS keyframes (no heavy animation libraries required).
-* **Smart Autocomplete:** Integrates the Geoapify Geocoding API for global city search, featuring custom debounce logic and dependency-loop prevention.
-* **Glassmorphism UI:** Modern, frosted-glass aesthetic built entirely with Tailwind utility classes.
+*   **Interactive 3D Globe:** A fully navigable, real-time 3D globe visualization that grounds the weather data in a physical, global context.
+*   **Ambient Soundscapes:** Context-aware audio that dynamically changes based on the current weather conditions, creating a highly immersive user experience.
+*   **Vayu Oracle Chatbot:** An integrated conversational interface allowing users to ask natural language questions about the weather, their run, flights, or allergies.
+*   **Multiplayer Presence:** Connects to the backend WebSocket to display exactly how many other users are currently viewing the weather for the same city.
+*   **7-Day Forecast Grid:** A fully responsive, meticulously styled CSS grid displaying the upcoming week's weather.
+*   **Bulletproof Data Handling:** Implements deep strict typing (`noImplicitAny`) and extensive optional chaining (`?.` / `??`) to ensure the UI gracefully handles loading states or missing backend data without crashing.
 
 ## 🛠️ Tech Stack
-* **Framework:** Next.js (React)
-* **Styling:** Tailwind CSS
-* **Icons:** Custom dynamic SVG components
-* **External API:** Geoapify (Autocomplete)
+*   **Next.js (App Router)**
+*   **React 18**
+*   **TypeScript** (Strict Mode)
+*   **Tailwind CSS**
+*   **Native WebSockets**
 
-## 🚀 Running Locally
+## ⚙️ Local Setup
 
-1. Clone the repository:
+1. Clone the repository.
+2. Install dependencies:
    ```bash
-   git clone [https://github.com/yourusername/vayu-frontend.git](https://github.com/yourusername/vayu-frontend.git)
+   npm install
